@@ -9,14 +9,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+/*body color*/
 :root {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #f6f9ff;
-  color: #444444;
+  
+  color: #1cfc08;
+  background-color: #0bf117;
 }
 
 a {
@@ -37,7 +39,11 @@ h5,
 h6 {
   font-family: "Nunito", sans-serif;
 }
-
+Headline {
+  font-family: "Open Sans", sans-serif;
+  background: hsl(270, 100%, 0%);
+  color: #070707;
+}
 /*--------------------------------------------------------------
 # Main
 --------------------------------------------------------------*/
@@ -182,8 +188,8 @@ h6 {
 
 /* Light Backgrounds */
 .bg-primary-light {
-  background-color: #cfe2ff;
-  border-color: #cfe2ff;
+  background-color: #d5ffcf;
+  border-color: #6ddf10;
 }
 
 .bg-secondary-light {
@@ -221,7 +227,7 @@ h6 {
   margin-bottom: 30px;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 0 30px rgba(4, 228, 4, 0.1);
 }
 
 .card-header,
@@ -248,6 +254,15 @@ h6 {
 
 .card-body {
   padding: 0 20px 20px 20px;
+  box-shadow: 5px 5px 5px 5px rgb(252, 250, 250);
+}
+.Homecard-body {
+  padding: 0 20px 20px 20px;
+  box-shadow: 5px 5px 5px 5px rgb(252, 250, 250);
+}
+.Homecard-body1 {
+  padding: 0 20px 20px 20px;
+  box-shadow: 5px 5px 5px 8px rgb(250, 249, 249);
 }
 
 .card-img-overlay {
@@ -372,7 +387,7 @@ h6 {
 .logo span {
   font-size: 26px;
   font-weight: 700;
-  color: #012970;
+  color: #fdfdfd;
   font-family: "Nunito", sans-serif;
 }
 
@@ -380,8 +395,8 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   height: 60px;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+  box-shadow: 0px 2px 20px hsla(143, 96%, 19%, 0.1);
+  background-color: #000c01;
   padding-left: 20px;
   /* Toggle Sidebar Button */
   /* Search Bar */
@@ -391,7 +406,7 @@ h6 {
   font-size: 32px;
   padding-left: 10px;
   cursor: pointer;
-  color: #012970;
+  color: #fbfdff;
 }
 
 .header .search-bar {
@@ -593,6 +608,12 @@ h6 {
 .header-nav .profile .dropdown-item:hover {
   background-color: #f6f9ff;
 }
+.Ptext
+{
+  font-size: 15px;
+  font-weight: 600;
+  color: #ececf1;
+}
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -610,7 +631,8 @@ h6 {
   scrollbar-width: thin;
   scrollbar-color: #aab7cf transparent;
   box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
-  background-color: #fff;
+   
+  background: hsl(139, 26%, 12%);
 }
 
 @media (max-width: 1199px) {
@@ -669,6 +691,7 @@ h6 {
 
 .sidebar-nav .nav-item {
   margin-bottom: 5px;
+  color: #00040c;
 }
 
 .sidebar-nav .nav-heading {
@@ -684,9 +707,9 @@ h6 {
   align-items: center;
   font-size: 15px;
   font-weight: 600;
-  color: #4154f1;
+  color: #070808;
   transition: 0.3;
-  background: #f6f9ff;
+  background: #f5f0f0;
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -735,7 +758,7 @@ h6 {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  color: #012970;
+  color: #dee2e7;
   transition: 0.3;
   padding: 10px 0 10px 40px;
   transition: 0.3s;
@@ -750,11 +773,11 @@ h6 {
 
 .sidebar-nav .nav-content a:hover,
 .sidebar-nav .nav-content a.active {
-  color: #4154f1;
+  color: #69f80a;
 }
 
 .sidebar-nav .nav-content a.active i {
-  background-color: #4154f1;
+  background-color: #f50a0a;
 }
 
 /*--------------------------------------------------------------
@@ -1222,12 +1245,14 @@ h6 {
 
 .footer .copyright {
   text-align: center;
-  color: #012970;
+  color: #000305;
+  font-size: 15px;
+  
 }
 
 .footer .credits {
   padding-top: 5px;
   text-align: center;
-  font-size: 13px;
-  color: #012970;
+  font-size: 15px;
+  color: #3208ee;
 }
